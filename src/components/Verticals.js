@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { DataContext } from '../App'; // Import DataContext
-import { Box, TextField, Card, CardContent, Typography } from '@mui/material';
+import { Box, TextField, Card, CardContent, Typography, CardActionArea } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 const Verticals = () => {
@@ -28,16 +28,17 @@ const Verticals = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       {filteredVerticals.map((vertical, index) => (
-        <Card
-          key={index}
-          sx={{ mb: 2 }}
-          onClick={() => handleVerticalClick(vertical.name)} // Add click handler
-          // Add cursor pointer
-          style={{ cursor: 'pointer' }}>
-          <CardContent>
-            <Typography variant="h5">{vertical.name}</Typography>
-            {/* Additional details can be displayed here */}
-          </CardContent>
+        <Card key={index} sx={{ mb: 2, boxShadow: 3 }}>
+          <CardActionArea onClick={() => handleVerticalClick(vertical.name)}>
+            <CardContent>
+              <Typography variant="h5" gutterBottom>
+                {vertical.name}
+              </Typography>
+              <Typography variant="body2" color="textSecondary">
+                {vertical.description ? vertical.description : 'No description available'}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
         </Card>
       ))}
     </Box>

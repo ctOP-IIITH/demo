@@ -1,4 +1,4 @@
-import { getAccessToken } from './tokenService';
+import { getAccessToken, saveTokens, clearTokens } from './tokenService';
 
 // authService.js
 const authService = {
@@ -7,10 +7,12 @@ const authService = {
   login: async (email, password) => {
     if (email === 'admin' && password === 'admin') {
       authService.isAuthenticated = true;
+      saveTokens(true, true);
     }
   },
   logout: () => {
     authService.isAuthenticated = false;
+    clearTokens();
   }
 };
 

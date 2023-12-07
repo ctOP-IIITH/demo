@@ -36,6 +36,7 @@ function App() {
   const [nodesData, setNodesData] = useState({});
 
   const updateNodesData = (newNodesData) => {
+    console.log('newNodesData', newNodesData);
     setNodesData(newNodesData);
     localStorage.setItem('nodesData', JSON.stringify(newNodesData));
   };
@@ -44,7 +45,7 @@ function App() {
     console.log(sampleNodesData);
     // check local storage for nodes data
     const localNodesData = localStorage.getItem('nodesData');
-    if (localNodesData) {
+    if (localNodesData !== null && localNodesData !== 'undefined' && localNodesData !== '') {
       // check if valid JSON or if empty
       if (!JSON.parse(localNodesData) || JSON.parse(localNodesData).length === 0) {
         // set nodes data
