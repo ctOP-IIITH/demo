@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.05c7179c.js",
+    "static/js/787.9e9f4ffd.chunk.js": "/static/js/787.9e9f4ffd.chunk.js",
+    "static/media/scrclogo.png": "/static/media/scrclogo.1d3166a27968c4078cbf.png",
+    "static/media/iiithlogo.png": "/static/media/iiithlogo.9512869ec5f68e7a72ff.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.05c7179c.js.map": "/static/js/main.05c7179c.js.map",
+    "787.9e9f4ffd.chunk.js.map": "/static/js/787.9e9f4ffd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.05c7179c.js"
+  ]
+}
