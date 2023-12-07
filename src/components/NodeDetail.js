@@ -83,7 +83,7 @@ const NodeDetail = () => {
       </Typography>
       <Card variant="outlined" sx={{ my: 2 }}>
         <CardContent>
-          <Typography variant="h6">POST /nodes</Typography>
+          <Typography variant="h6">{`POST https://api.example.com/ndoes/${nodeName}`}</Typography>
           <Typography variant="body1">Summary: Create a new node</Typography>
           <Typography variant="body1">Body:</Typography>
           <CodeBlock
