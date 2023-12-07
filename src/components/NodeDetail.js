@@ -12,7 +12,9 @@ import {
   TableRow,
   Paper,
   Card,
-  CardContent
+  CardContent,
+  TextField,
+  Button
 } from '@mui/material';
 import { CodeBlock, dracula } from 'react-code-blocks'; // You may need to install a package for code blocks
 import IconButton from '@mui/material/IconButton';
@@ -23,6 +25,8 @@ const NodeDetail = () => {
   const { nodesData, updateNodesData } = useContext(DataContext);
   const node = nodesData.verticals.flatMap((v) => v.nodes).find((n) => n.nodeName === id);
   const [subscriptions, setSubscriptions] = useState(node.subscriptions || []);
+  const [newData, setNewData] = useState({});
+  const [showForm, setShowForm] = useState(false);
 
   if (!node) {
     return <Typography variant="h5">Node not found</Typography>;
@@ -40,6 +44,29 @@ const NodeDetail = () => {
       });
     });
     updateNodesData(nodesData);
+  };
+
+  const handleAddData = (e) => {
+    e.preventDefault();
+
+    // Add logic to validate newData here if needed
+
+    // Update the node's data
+    const updatedNodeData = [...data, newData];
+
+    // Update nodesData
+    nodesData.verticals.forEach((vertical) => {
+      vertical.nodes.forEach((node) => {
+        if (node.nodeName === id) {
+          node.data.push(newData);
+        }
+      });
+    });
+
+    updateNodesData(nodesData);
+
+    // Reset the newData state
+    setNewData({});
   };
 
   const { nodeName, nodeType, data } = node;
@@ -120,6 +147,31 @@ const NodeDetail = () => {
           </TableBody>
         </Table>
       </TableContainer>
+      <Box sx={{ display: 'flex', alignItems: 'center', mt: 2 }}>
+        <Button variant="contained" color="primary" onClick={() => setShowForm(!showForm)}>
+          {showForm ? 'Hide Form' : 'Add Data'}
+        </Button>
+      </Box>
+      {showForm && nodesData && (
+        <Box component="form" onSubmit={handleAddData} sx={{ mt: 2 }}>
+          <Typography variant="h6">Add New Data</Typography>
+          {nodeTypeParams &&
+            nodeTypeParams.map((param, index) => (
+              <TextField
+                key={index}
+                label={param}
+                variant="outlined"
+                fullWidth
+                margin="normal"
+                value={newData[param] || ''}
+                onChange={(e) => setNewData({ ...newData, [param]: e.target.value })}
+              />
+            ))}
+          <Button type="submit" variant="contained" color="primary" sx={{ mt: 2 }}>
+            Submit
+          </Button>
+        </Box>
+      )}
     </Box>
   );
 };
