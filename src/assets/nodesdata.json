@@ -1,0 +1,1064 @@
+{
+  "verticals": [
+    {
+      "name": "Water Quality",
+      "nodeTypes": {
+        "WQ-VJS-V1": ["AQI", "WQI", "Density", "Pressure"],
+        "WQ-SCRC-V1": ["AQI", "WQI", "Density", "Pressure", "Flow"]
+      },
+      "nodes": [
+        {
+          "nodeName": "AE-Wa1",
+          "nodeType": "WQ-SCRC-V1",
+          "data": [
+            {
+              "AQI": 2,
+              "WQI": 6,
+              "Density": 59,
+              "Pressure": 37,
+              "Flow": 5
+            },
+            {
+              "AQI": 42,
+              "WQI": 36,
+              "Density": 40,
+              "Pressure": 21,
+              "Flow": 77
+            },
+            {
+              "AQI": 81,
+              "WQI": 0,
+              "Density": 33,
+              "Pressure": 81,
+              "Flow": 32
+            },
+            {
+              "AQI": 45,
+              "WQI": 27,
+              "Density": 27,
+              "Pressure": 4,
+              "Flow": 97
+            },
+            {
+              "AQI": 77,
+              "WQI": 71,
+              "Density": 99,
+              "Pressure": 97,
+              "Flow": 19
+            },
+            {
+              "AQI": 89,
+              "WQI": 84,
+              "Density": 12,
+              "Pressure": 66,
+              "Flow": 95
+            },
+            {
+              "AQI": 72,
+              "WQI": 60,
+              "Density": 1,
+              "Pressure": 35,
+              "Flow": 18
+            },
+            {
+              "AQI": 85,
+              "WQI": 73,
+              "Density": 9,
+              "Pressure": 51,
+              "Flow": 27
+            },
+            {
+              "AQI": 27,
+              "WQI": 25,
+              "Density": 21,
+              "Pressure": 100,
+              "Flow": 77
+            },
+            {
+              "AQI": 31,
+              "WQI": 7,
+              "Density": 97,
+              "Pressure": 47,
+              "Flow": 87
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Wa2",
+          "nodeType": "WQ-VJS-V1",
+          "data": [
+            {
+              "AQI": 65,
+              "WQI": 11,
+              "Density": 90,
+              "Pressure": 100
+            },
+            {
+              "AQI": 91,
+              "WQI": 49,
+              "Density": 15,
+              "Pressure": 61
+            },
+            {
+              "AQI": 41,
+              "WQI": 49,
+              "Density": 49,
+              "Pressure": 20
+            },
+            {
+              "AQI": 25,
+              "WQI": 62,
+              "Density": 28,
+              "Pressure": 97
+            },
+            {
+              "AQI": 79,
+              "WQI": 39,
+              "Density": 48,
+              "Pressure": 47
+            },
+            {
+              "AQI": 97,
+              "WQI": 65,
+              "Density": 58,
+              "Pressure": 29
+            },
+            {
+              "AQI": 29,
+              "WQI": 44,
+              "Density": 49,
+              "Pressure": 75
+            },
+            {
+              "AQI": 26,
+              "WQI": 43,
+              "Density": 73,
+              "Pressure": 51
+            },
+            {
+              "AQI": 55,
+              "WQI": 63,
+              "Density": 9,
+              "Pressure": 55
+            },
+            {
+              "AQI": 63,
+              "WQI": 99,
+              "Density": 37,
+              "Pressure": 23
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Wa3",
+          "nodeType": "WQ-SCRC-V1",
+          "data": [
+            {
+              "AQI": 47,
+              "WQI": 27,
+              "Density": 75,
+              "Pressure": 8,
+              "Flow": 38
+            },
+            {
+              "AQI": 43,
+              "WQI": 25,
+              "Density": 42,
+              "Pressure": 91,
+              "Flow": 17
+            },
+            {
+              "AQI": 62,
+              "WQI": 89,
+              "Density": 96,
+              "Pressure": 70,
+              "Flow": 67
+            },
+            {
+              "AQI": 81,
+              "WQI": 72,
+              "Density": 8,
+              "Pressure": 77,
+              "Flow": 34
+            },
+            {
+              "AQI": 9,
+              "WQI": 63,
+              "Density": 63,
+              "Pressure": 66,
+              "Flow": 49
+            },
+            {
+              "AQI": 87,
+              "WQI": 17,
+              "Density": 33,
+              "Pressure": 29,
+              "Flow": 19
+            },
+            {
+              "AQI": 13,
+              "WQI": 43,
+              "Density": 6,
+              "Pressure": 40,
+              "Flow": 37
+            },
+            {
+              "AQI": 89,
+              "WQI": 39,
+              "Density": 86,
+              "Pressure": 60,
+              "Flow": 44
+            },
+            {
+              "AQI": 87,
+              "WQI": 71,
+              "Density": 25,
+              "Pressure": 69,
+              "Flow": 2
+            },
+            {
+              "AQI": 74,
+              "WQI": 72,
+              "Density": 10,
+              "Pressure": 88,
+              "Flow": 41
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Wa4",
+          "nodeType": "WQ-VJS-V1",
+          "data": [
+            {
+              "AQI": 24,
+              "WQI": 51,
+              "Density": 99,
+              "Pressure": 17
+            },
+            {
+              "AQI": 79,
+              "WQI": 65,
+              "Density": 43,
+              "Pressure": 91
+            },
+            {
+              "AQI": 44,
+              "WQI": 90,
+              "Density": 65,
+              "Pressure": 33
+            },
+            {
+              "AQI": 89,
+              "WQI": 45,
+              "Density": 78,
+              "Pressure": 16
+            },
+            {
+              "AQI": 19,
+              "WQI": 28,
+              "Density": 32,
+              "Pressure": 46
+            },
+            {
+              "AQI": 81,
+              "WQI": 71,
+              "Density": 73,
+              "Pressure": 1
+            },
+            {
+              "AQI": 50,
+              "WQI": 79,
+              "Density": 18,
+              "Pressure": 88
+            },
+            {
+              "AQI": 27,
+              "WQI": 97,
+              "Density": 56,
+              "Pressure": 83
+            },
+            {
+              "AQI": 94,
+              "WQI": 96,
+              "Density": 26,
+              "Pressure": 82
+            },
+            {
+              "AQI": 29,
+              "WQI": 50,
+              "Density": 82,
+              "Pressure": 34
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Wa5",
+          "nodeType": "WQ-SCRC-V1",
+          "data": [
+            {
+              "AQI": 2,
+              "WQI": 32,
+              "Density": 96,
+              "Pressure": 12,
+              "Flow": 50
+            },
+            {
+              "AQI": 4,
+              "WQI": 33,
+              "Density": 28,
+              "Pressure": 88,
+              "Flow": 46
+            },
+            {
+              "AQI": 26,
+              "WQI": 35,
+              "Density": 91,
+              "Pressure": 30,
+              "Flow": 36
+            },
+            {
+              "AQI": 80,
+              "WQI": 90,
+              "Density": 38,
+              "Pressure": 59,
+              "Flow": 77
+            },
+            {
+              "AQI": 98,
+              "WQI": 96,
+              "Density": 25,
+              "Pressure": 92,
+              "Flow": 77
+            },
+            {
+              "AQI": 39,
+              "WQI": 90,
+              "Density": 2,
+              "Pressure": 57,
+              "Flow": 9
+            },
+            {
+              "AQI": 83,
+              "WQI": 6,
+              "Density": 97,
+              "Pressure": 39,
+              "Flow": 19
+            },
+            {
+              "AQI": 44,
+              "WQI": 30,
+              "Density": 23,
+              "Pressure": 82,
+              "Flow": 90
+            },
+            {
+              "AQI": 38,
+              "WQI": 30,
+              "Density": 26,
+              "Pressure": 94,
+              "Flow": 14
+            },
+            {
+              "AQI": 55,
+              "WQI": 18,
+              "Density": 10,
+              "Pressure": 50,
+              "Flow": 68
+            }
+          ],
+          "subscriptions": []
+        }
+      ]
+    },
+    {
+      "name": "Air Quality",
+      "nodeTypes": {
+        "AQ-XYZ-V1": ["PM2.5", "PM10", "CO2 Levels", "Temperature"]
+      },
+      "nodes": [
+        {
+          "nodeName": "AE-Ai1",
+          "nodeType": "AQ-XYZ-V1",
+          "data": [
+            {
+              "PM2.5": 44,
+              "PM10": 98,
+              "CO2 Levels": 11,
+              "Temperature": 94
+            },
+            {
+              "PM2.5": 88,
+              "PM10": 49,
+              "CO2 Levels": 3,
+              "Temperature": 15
+            },
+            {
+              "PM2.5": 20,
+              "PM10": 27,
+              "CO2 Levels": 39,
+              "Temperature": 62
+            },
+            {
+              "PM2.5": 1,
+              "PM10": 62,
+              "CO2 Levels": 93,
+              "Temperature": 36
+            },
+            {
+              "PM2.5": 34,
+              "PM10": 64,
+              "CO2 Levels": 68,
+              "Temperature": 91
+            },
+            {
+              "PM2.5": 26,
+              "PM10": 91,
+              "CO2 Levels": 97,
+              "Temperature": 47
+            },
+            {
+              "PM2.5": 1,
+              "PM10": 76,
+              "CO2 Levels": 59,
+              "Temperature": 39
+            },
+            {
+              "PM2.5": 30,
+              "PM10": 13,
+              "CO2 Levels": 76,
+              "Temperature": 38
+            },
+            {
+              "PM2.5": 86,
+              "PM10": 93,
+              "CO2 Levels": 84,
+              "Temperature": 50
+            },
+            {
+              "PM2.5": 80,
+              "PM10": 38,
+              "CO2 Levels": 59,
+              "Temperature": 84
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Ai2",
+          "nodeType": "AQ-XYZ-V1",
+          "data": [
+            {
+              "PM2.5": 65,
+              "PM10": 49,
+              "CO2 Levels": 95,
+              "Temperature": 75
+            },
+            {
+              "PM2.5": 97,
+              "PM10": 73,
+              "CO2 Levels": 78,
+              "Temperature": 9
+            },
+            {
+              "PM2.5": 84,
+              "PM10": 6,
+              "CO2 Levels": 42,
+              "Temperature": 84
+            },
+            {
+              "PM2.5": 73,
+              "PM10": 59,
+              "CO2 Levels": 54,
+              "Temperature": 33
+            },
+            {
+              "PM2.5": 51,
+              "PM10": 47,
+              "CO2 Levels": 29,
+              "Temperature": 58
+            },
+            {
+              "PM2.5": 76,
+              "PM10": 61,
+              "CO2 Levels": 29,
+              "Temperature": 19
+            },
+            {
+              "PM2.5": 72,
+              "PM10": 63,
+              "CO2 Levels": 86,
+              "Temperature": 45
+            },
+            {
+              "PM2.5": 16,
+              "PM10": 18,
+              "CO2 Levels": 28,
+              "Temperature": 24
+            },
+            {
+              "PM2.5": 27,
+              "PM10": 23,
+              "CO2 Levels": 51,
+              "Temperature": 89
+            },
+            {
+              "PM2.5": 7,
+              "PM10": 86,
+              "CO2 Levels": 86,
+              "Temperature": 61
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Ai3",
+          "nodeType": "AQ-XYZ-V1",
+          "data": [
+            {
+              "PM2.5": 0,
+              "PM10": 71,
+              "CO2 Levels": 56,
+              "Temperature": 55
+            },
+            {
+              "PM2.5": 41,
+              "PM10": 1,
+              "CO2 Levels": 29,
+              "Temperature": 58
+            },
+            {
+              "PM2.5": 67,
+              "PM10": 99,
+              "CO2 Levels": 75,
+              "Temperature": 77
+            },
+            {
+              "PM2.5": 100,
+              "PM10": 6,
+              "CO2 Levels": 37,
+              "Temperature": 36
+            },
+            {
+              "PM2.5": 98,
+              "PM10": 94,
+              "CO2 Levels": 33,
+              "Temperature": 93
+            },
+            {
+              "PM2.5": 55,
+              "PM10": 89,
+              "CO2 Levels": 86,
+              "Temperature": 90
+            },
+            {
+              "PM2.5": 33,
+              "PM10": 57,
+              "CO2 Levels": 65,
+              "Temperature": 90
+            },
+            {
+              "PM2.5": 97,
+              "PM10": 92,
+              "CO2 Levels": 18,
+              "Temperature": 46
+            },
+            {
+              "PM2.5": 74,
+              "PM10": 59,
+              "CO2 Levels": 81,
+              "Temperature": 24
+            },
+            {
+              "PM2.5": 71,
+              "PM10": 91,
+              "CO2 Levels": 10,
+              "Temperature": 14
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Ai4",
+          "nodeType": "AQ-XYZ-V1",
+          "data": [
+            {
+              "PM2.5": 9,
+              "PM10": 10,
+              "CO2 Levels": 23,
+              "Temperature": 92
+            },
+            {
+              "PM2.5": 10,
+              "PM10": 38,
+              "CO2 Levels": 33,
+              "Temperature": 26
+            },
+            {
+              "PM2.5": 86,
+              "PM10": 55,
+              "CO2 Levels": 84,
+              "Temperature": 10
+            },
+            {
+              "PM2.5": 28,
+              "PM10": 71,
+              "CO2 Levels": 92,
+              "Temperature": 8
+            },
+            {
+              "PM2.5": 85,
+              "PM10": 48,
+              "CO2 Levels": 11,
+              "Temperature": 27
+            },
+            {
+              "PM2.5": 44,
+              "PM10": 49,
+              "CO2 Levels": 35,
+              "Temperature": 28
+            },
+            {
+              "PM2.5": 79,
+              "PM10": 94,
+              "CO2 Levels": 85,
+              "Temperature": 19
+            },
+            {
+              "PM2.5": 70,
+              "PM10": 97,
+              "CO2 Levels": 68,
+              "Temperature": 0
+            },
+            {
+              "PM2.5": 58,
+              "PM10": 61,
+              "CO2 Levels": 99,
+              "Temperature": 70
+            },
+            {
+              "PM2.5": 46,
+              "PM10": 89,
+              "CO2 Levels": 50,
+              "Temperature": 43
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Ai5",
+          "nodeType": "AQ-XYZ-V1",
+          "data": [
+            {
+              "PM2.5": 53,
+              "PM10": 53,
+              "CO2 Levels": 81,
+              "Temperature": 51
+            },
+            {
+              "PM2.5": 32,
+              "PM10": 82,
+              "CO2 Levels": 50,
+              "Temperature": 99
+            },
+            {
+              "PM2.5": 66,
+              "PM10": 36,
+              "CO2 Levels": 28,
+              "Temperature": 13
+            },
+            {
+              "PM2.5": 47,
+              "PM10": 39,
+              "CO2 Levels": 97,
+              "Temperature": 100
+            },
+            {
+              "PM2.5": 79,
+              "PM10": 25,
+              "CO2 Levels": 26,
+              "Temperature": 34
+            },
+            {
+              "PM2.5": 95,
+              "PM10": 100,
+              "CO2 Levels": 83,
+              "Temperature": 4
+            },
+            {
+              "PM2.5": 20,
+              "PM10": 78,
+              "CO2 Levels": 41,
+              "Temperature": 69
+            },
+            {
+              "PM2.5": 86,
+              "PM10": 94,
+              "CO2 Levels": 16,
+              "Temperature": 0
+            },
+            {
+              "PM2.5": 61,
+              "PM10": 87,
+              "CO2 Levels": 20,
+              "Temperature": 68
+            },
+            {
+              "PM2.5": 67,
+              "PM10": 47,
+              "CO2 Levels": 71,
+              "Temperature": 48
+            }
+          ],
+          "subscriptions": []
+        }
+      ]
+    },
+    {
+      "name": "Smart Room",
+      "nodeTypes": {
+        "SR-ABC-V1": ["Temperature", "Humidity", "Light", "Occupancy"]
+      },
+      "nodes": [
+        {
+          "nodeName": "AE-Sm1",
+          "nodeType": "SR-ABC-V1",
+          "data": [
+            {
+              "Temperature": 21,
+              "Humidity": 84,
+              "Light": 95,
+              "Occupancy": 51
+            },
+            {
+              "Temperature": 46,
+              "Humidity": 97,
+              "Light": 79,
+              "Occupancy": 64
+            },
+            {
+              "Temperature": 47,
+              "Humidity": 81,
+              "Light": 9,
+              "Occupancy": 20
+            },
+            {
+              "Temperature": 0,
+              "Humidity": 34,
+              "Light": 93,
+              "Occupancy": 94
+            },
+            {
+              "Temperature": 64,
+              "Humidity": 69,
+              "Light": 1,
+              "Occupancy": 40
+            },
+            {
+              "Temperature": 13,
+              "Humidity": 24,
+              "Light": 43,
+              "Occupancy": 73
+            },
+            {
+              "Temperature": 19,
+              "Humidity": 65,
+              "Light": 62,
+              "Occupancy": 72
+            },
+            {
+              "Temperature": 79,
+              "Humidity": 71,
+              "Light": 61,
+              "Occupancy": 13
+            },
+            {
+              "Temperature": 0,
+              "Humidity": 88,
+              "Light": 66,
+              "Occupancy": 79
+            },
+            {
+              "Temperature": 74,
+              "Humidity": 36,
+              "Light": 74,
+              "Occupancy": 37
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Sm2",
+          "nodeType": "SR-ABC-V1",
+          "data": [
+            {
+              "Temperature": 99,
+              "Humidity": 70,
+              "Light": 12,
+              "Occupancy": 16
+            },
+            {
+              "Temperature": 55,
+              "Humidity": 57,
+              "Light": 51,
+              "Occupancy": 55
+            },
+            {
+              "Temperature": 70,
+              "Humidity": 19,
+              "Light": 24,
+              "Occupancy": 53
+            },
+            {
+              "Temperature": 6,
+              "Humidity": 84,
+              "Light": 10,
+              "Occupancy": 81
+            },
+            {
+              "Temperature": 88,
+              "Humidity": 47,
+              "Light": 29,
+              "Occupancy": 21
+            },
+            {
+              "Temperature": 29,
+              "Humidity": 84,
+              "Light": 44,
+              "Occupancy": 16
+            },
+            {
+              "Temperature": 94,
+              "Humidity": 42,
+              "Light": 33,
+              "Occupancy": 35
+            },
+            {
+              "Temperature": 31,
+              "Humidity": 68,
+              "Light": 49,
+              "Occupancy": 22
+            },
+            {
+              "Temperature": 33,
+              "Humidity": 1,
+              "Light": 81,
+              "Occupancy": 38
+            },
+            {
+              "Temperature": 90,
+              "Humidity": 32,
+              "Light": 24,
+              "Occupancy": 95
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Sm3",
+          "nodeType": "SR-ABC-V1",
+          "data": [
+            {
+              "Temperature": 41,
+              "Humidity": 59,
+              "Light": 65,
+              "Occupancy": 36
+            },
+            {
+              "Temperature": 85,
+              "Humidity": 20,
+              "Light": 19,
+              "Occupancy": 82
+            },
+            {
+              "Temperature": 91,
+              "Humidity": 89,
+              "Light": 6,
+              "Occupancy": 86
+            },
+            {
+              "Temperature": 99,
+              "Humidity": 21,
+              "Light": 96,
+              "Occupancy": 52
+            },
+            {
+              "Temperature": 67,
+              "Humidity": 10,
+              "Light": 82,
+              "Occupancy": 12
+            },
+            {
+              "Temperature": 6,
+              "Humidity": 52,
+              "Light": 85,
+              "Occupancy": 56
+            },
+            {
+              "Temperature": 40,
+              "Humidity": 45,
+              "Light": 21,
+              "Occupancy": 86
+            },
+            {
+              "Temperature": 8,
+              "Humidity": 55,
+              "Light": 95,
+              "Occupancy": 96
+            },
+            {
+              "Temperature": 46,
+              "Humidity": 37,
+              "Light": 12,
+              "Occupancy": 69
+            },
+            {
+              "Temperature": 90,
+              "Humidity": 99,
+              "Light": 45,
+              "Occupancy": 52
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Sm4",
+          "nodeType": "SR-ABC-V1",
+          "data": [
+            {
+              "Temperature": 99,
+              "Humidity": 54,
+              "Light": 69,
+              "Occupancy": 56
+            },
+            {
+              "Temperature": 62,
+              "Humidity": 61,
+              "Light": 71,
+              "Occupancy": 24
+            },
+            {
+              "Temperature": 50,
+              "Humidity": 38,
+              "Light": 14,
+              "Occupancy": 16
+            },
+            {
+              "Temperature": 88,
+              "Humidity": 41,
+              "Light": 48,
+              "Occupancy": 59
+            },
+            {
+              "Temperature": 29,
+              "Humidity": 79,
+              "Light": 84,
+              "Occupancy": 21
+            },
+            {
+              "Temperature": 95,
+              "Humidity": 21,
+              "Light": 44,
+              "Occupancy": 46
+            },
+            {
+              "Temperature": 68,
+              "Humidity": 6,
+              "Light": 7,
+              "Occupancy": 37
+            },
+            {
+              "Temperature": 80,
+              "Humidity": 100,
+              "Light": 80,
+              "Occupancy": 36
+            },
+            {
+              "Temperature": 62,
+              "Humidity": 10,
+              "Light": 38,
+              "Occupancy": 81
+            },
+            {
+              "Temperature": 22,
+              "Humidity": 41,
+              "Light": 23,
+              "Occupancy": 27
+            }
+          ],
+          "subscriptions": []
+        },
+        {
+          "nodeName": "AE-Sm5",
+          "nodeType": "SR-ABC-V1",
+          "data": [
+            {
+              "Temperature": 26,
+              "Humidity": 35,
+              "Light": 35,
+              "Occupancy": 52
+            },
+            {
+              "Temperature": 53,
+              "Humidity": 26,
+              "Light": 89,
+              "Occupancy": 13
+            },
+            {
+              "Temperature": 21,
+              "Humidity": 58,
+              "Light": 27,
+              "Occupancy": 53
+            },
+            {
+              "Temperature": 28,
+              "Humidity": 19,
+              "Light": 79,
+              "Occupancy": 56
+            },
+            {
+              "Temperature": 95,
+              "Humidity": 37,
+              "Light": 46,
+              "Occupancy": 16
+            },
+            {
+              "Temperature": 7,
+              "Humidity": 27,
+              "Light": 95,
+              "Occupancy": 84
+            },
+            {
+              "Temperature": 54,
+              "Humidity": 3,
+              "Light": 73,
+              "Occupancy": 94
+            },
+            {
+              "Temperature": 68,
+              "Humidity": 88,
+              "Light": 79,
+              "Occupancy": 52
+            },
+            {
+              "Temperature": 34,
+              "Humidity": 35,
+              "Light": 42,
+              "Occupancy": 92
+            },
+            {
+              "Temperature": 32,
+              "Humidity": 28,
+              "Light": 99,
+              "Occupancy": 18
+            }
+          ],
+          "subscriptions": []
+        }
+      ]
+    }
+  ]
+}
