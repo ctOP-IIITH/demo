@@ -18,6 +18,7 @@ const CreateNodeType = () => {
   const [nodeTypeName, setNodeTypeName] = useState('');
   const [parameters, setParameters] = useState([]);
   const [selectedVertical, setSelectedVertical] = useState('');
+  const [baseNodeType, setBaseNodeType] = useState('');
 
   const { nodesData, updateNodesData } = useContext(DataContext);
 
@@ -33,6 +34,21 @@ const CreateNodeType = () => {
 
   const handleRemoveParameter = (index) => {
     setParameters(parameters.filter((_, i) => i !== index));
+  };
+
+  const handleBaseNodeTypeChange = (event) => {
+    const selectedBaseType = event.target.value;
+    setBaseNodeType(selectedBaseType);
+
+    if (selectedBaseType) {
+      const baseParams = nodesData.verticals.find((v) => v.name === selectedVertical).nodeTypes[
+        selectedBaseType
+      ];
+      const formattedParams = baseParams.map((param) => ({ name: param, dataType: '' })); // Assuming dataType needs to be filled by the user
+      setParameters(formattedParams);
+    } else {
+      setParameters([]);
+    }
   };
 
   const handleSubmit = (e) => {
@@ -70,6 +86,31 @@ const CreateNodeType = () => {
   return (
     <Box sx={{ p: 3 }}>
       <Typography variant="h4">Create New Node Type</Typography>
+
+      <FormControl fullWidth margin="normal" disabled={!selectedVertical}>
+        <InputLabel id="select-base-node-type-label">Base Node Type (Optional)</InputLabel>
+        <Select
+          labelId="select-base-node-type-label"
+          value={baseNodeType}
+          label="Base Node Type (Optional)"
+          onChange={handleBaseNodeTypeChange}>
+          <MenuItem value="">None</MenuItem>
+          {selectedVertical &&
+            nodesData.verticals.find((v) => v.name === selectedVertical).nodeTypes &&
+            Object.keys(nodesData.verticals.find((v) => v.name === selectedVertical).nodeTypes).map(
+              (type, index) => (
+                <MenuItem key={index} value={type}>
+                  {type}
+                </MenuItem>
+              )
+            )}
+        </Select>
+        {!selectedVertical && (
+          <Typography variant="caption" sx={{ mt: 1 }}>
+            Please select a vertical first to enable this option.
+          </Typography>
+        )}
+      </FormControl>
 
       <form onSubmit={handleSubmit}>
         <FormControl fullWidth margin="normal">
